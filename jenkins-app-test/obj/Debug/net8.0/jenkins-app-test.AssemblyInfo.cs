@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jenkins-app-test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01bee6f658304d33c23e7847f1023a005a62b4f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("jenkins-app-test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jenkins-app-test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

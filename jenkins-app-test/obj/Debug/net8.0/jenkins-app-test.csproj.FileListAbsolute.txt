@@ -28,3 +28,4 @@ E:\Code\jenkins-test\jenkins-app-test\obj\Debug\net8.0\refint\jenkins-app-test.d
 E:\Code\jenkins-test\jenkins-app-test\obj\Debug\net8.0\jenkins-app-test.pdb
 E:\Code\jenkins-test\jenkins-app-test\obj\Debug\net8.0\jenkins-app-test.genruntimeconfig.cache
 E:\Code\jenkins-test\jenkins-app-test\obj\Debug\net8.0\ref\jenkins-app-test.dll
+E:\Code\jenkins-test\jenkins-app-test\obj\Debug\net8.0\jenkins-app-test.sourcelink.json

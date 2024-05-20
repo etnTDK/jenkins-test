@@ -7,4 +7,9 @@
     <RootNamespace>jenkins_app_test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="xunit.assert" Version="2.8.0" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.8.0" />
+  </ItemGroup>
+
 </Project>

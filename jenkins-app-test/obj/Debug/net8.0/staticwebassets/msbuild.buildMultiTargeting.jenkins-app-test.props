@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\jenkins-app-test.props" />
+</Project>

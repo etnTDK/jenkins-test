@@ -9,6 +9,14 @@ pipeline {
       DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
    }
     stages {
+       stage('Restore package') {
+            steps {
+                sh '''
+                    dotnet restore
+                    echo "Cleaned done!"
+                '''
+            }
+        }
         stage('Clean') {
             steps {
                 sh '''

@@ -1,6 +1,9 @@
 pipeline {
    agent any
-
+   environment {
+              DISABLE_AUTH = 'true'
+              DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
+   }
     stages {
         stage('Build') {
             
@@ -8,13 +11,7 @@ pipeline {
                 docker {
                     image 'mcr.microsoft.com/dotnet/sdk:8.0'
                 }
-                label '!windows'
             }
-
-          environment {
-              DISABLE_AUTH = 'true'
-              DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
-          }
             steps {
                 echo 'Building  ...'
                 sh '''

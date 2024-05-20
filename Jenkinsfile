@@ -13,9 +13,11 @@ pipeline {
             steps {
                 echo 'Building  ...'
                 sh '''
+                    ls -la
                     dotnet --version
                     dotnet clean
                     dotnet build
+                    ls -la
                 '''
             }
         }

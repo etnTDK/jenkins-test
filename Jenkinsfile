@@ -9,23 +9,31 @@ pipeline {
       DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
    }
     stages {
+        stage('Clean') {
+            steps {
+                sh '''
+                    dotnet clean
+                    echo "Cleaned done!"
+                '''
+            }
+        }
         stage('Build') {
             steps {
-                echo 'Building  ...'
                 sh '''
                     ls -la
                     dotnet --version
                     dotnet clean
                     dotnet build
                     ls -la
+                    echo "Built done!"
                 '''
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing  ...'
                 sh '''
                     dotnet test
+                    echo "Test done!"
                 '''
             }
         }

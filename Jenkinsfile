@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                     dotnet restore
-                    echo "Cleaned done!"
+                    echo "Restored done!"
                 '''
             }
         }

@@ -41,15 +41,10 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    dotnet test
+                    dotnet test --logger "trx;LogFileName=UnitTestResults.trx"
                     echo "Test done!"
                 '''
             }
         }
     }
-   post {
-    always {
-      step ([$class: 'MSTestPublisher', testResultsFile:"**/TestResults/UnitTests.trx", failOnError: true, keepLongStdio: true])
-    }
-  }
 }

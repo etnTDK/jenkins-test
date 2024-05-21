@@ -3,10 +3,12 @@ pipeline {
       docker {
          image 'mcr.microsoft.com/dotnet/sdk:8.0'
          reuseNode true
-         args '-u root:root'
+         args '-u root:root' // Dùng khi bị lỗi permission 
       }
    } 
-   /*environment {
+   /*
+   // Hoặc dùng cái này khi bị lỗi permission 
+   environment {
       DISABLE_AUTH = 'true'
       DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
    }*/

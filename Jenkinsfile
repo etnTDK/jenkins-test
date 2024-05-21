@@ -3,7 +3,7 @@ pipeline {
       docker {
          image 'mcr.microsoft.com/dotnet/sdk:8.0'
          reuseNode true
-         args '-u admin:admin'
+         args '-u root:root'
       }
    } 
    /*environment {

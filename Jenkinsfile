@@ -13,12 +13,6 @@ pipeline {
       DOTNET_CLI_HOME = "/tmp/DOTNET_CLI_HOME"
    }*/
     stages {
-       def remote = [:]
-       remote.name = 'test'
-       remote.host = 'test.domain.com'
-       remote.user = 'root'
-       remote.password = 'password'
-       remote.allowAnyHosts = true
        stage('Restore package') {
             steps {
                 sh '''
@@ -57,7 +51,7 @@ pipeline {
         }
        stage('Deploy') {
             steps {
-                  
+                  sh 'ssh ubuntu@localhost -p 2222'
             }
         }
     }

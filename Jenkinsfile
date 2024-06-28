@@ -49,6 +49,16 @@ pipeline {
                 '''
             }
         }
+       stage('Deploy') {
+            steps {
+                   def remote = [:]
+                   remote.name = 'test'
+                   remote.host = 'test.domain.com'
+                   remote.user = 'root'
+                   remote.password = 'password'
+                   remote.allowAnyHosts = true
+            }
+        }
     }
    
 }
